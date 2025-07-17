@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EventPlanner</title>
+</head>
+
+<body>
+    <h1 id="pageTitle">Event Schedule</h1>
+
+    
+    <table border="2" role="table" aria-labelledby="pageTitle">
+        <thead>
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Event Name</th>
+                <th scope="col">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:00 am</td>
+                <td>Induction</td>
+                <td>APJ Block</td>
+            </tr>
+            <tr>
+                <td>11:00 am</td>
+                <td>Cyber Security Event</td>
+                <td>Gandhi Block</td>
+            </tr>
+            <tr>
+                <td>1:00 pm</td>
+                <td>Networking Workshop</td>
+                <td>C Block</td>
+            </tr>
+            <tr>
+                <td>3:00 pm</td>
+                <td>WebDev Workshop</td>
+                <td>A Block</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="formTitle">Event Registration Form</h2>
+
+    
+    <form role="form" aria-labelledby="formTitle" action="#" method="post">
+        <label for="name">Name: <span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" aria-required="true"> <br><br>
+
+        <label for="email">Email: <span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" aria-required="true"> <br><br>
+
+        <fieldset>
+            <legend>Select Workshop(s):</legend>
+            <div role="group" aria-labelledby="workshops">
+                <span id="workshops" class="visually-hidden">Choose your workshops</span>
+
+                <input type="checkbox" id="cyber" name="workshop" value="Cyber Security">
+                <label for="cyber">Cyber Security</label><br>
+
+                <input type="checkbox" id="networking" name="workshop" value="Networking">
+                <label for="networking">Networking</label><br>
+
+                <input type="checkbox" id="webdev" name="workshop" value="Web Development">
+                <label for="webdev">Web Development</label><br>
+            </div>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Register">
+    </form>
+
+    
+</body>
+
+</html>
